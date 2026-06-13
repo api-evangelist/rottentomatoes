@@ -1,0 +1,32 @@
+plans:
+  - name: Licensed Partner Plan
+    description: >-
+      The Rotten Tomatoes API is available exclusively to approved commercial partners
+      through the Fandango Developer Network. Access requires submission of a business
+      proposal form, application review by Rotten Tomatoes, and execution of a paid
+      license agreement. The plan provides full access to Rotten Tomatoes scores and
+      review snippets (up to 20 per title). The approval process may take up to 60 days.
+    url: https://developer.fandango.com/rotten_tomatoes
+    applicationForm: https://fandango.az1.qualtrics.com/jfe/form/SV_0ieuKEYpn4S7nnM
+    pricing:
+      model: Annual License Fee
+      startingAt: "$60,000/year"
+      note: >-
+        Exact pricing is provided upon application approval and varies based on
+        usage, integration type, and commercial terms negotiated with Fandango.
+    access:
+      type: Application Required
+      keyIssuance: Upon approval only
+      approvalTime: Up to 60 days
+    features:
+      - Full Tomatometer scores for movies and TV shows
+      - Audience scores for movies and TV shows
+      - Critic review snippets (up to 20 per title)
+      - Movie and TV show detailed information
+      - Box office lists and theater listings
+      - DVD rental and release data
+      - Cast and crew information
+      - Movie and show search
+      - Upcoming releases and new releases
+    brandGuidelines: https://www.rottentomatoes.com/help_desk/licensing
+    termsOfService: https://developer.fandango.com/Fandango_Terms_of_Service

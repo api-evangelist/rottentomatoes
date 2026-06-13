@@ -1,0 +1,89 @@
+aid: rottentomatoes
+name: Rotten Tomatoes
+description: >-
+  Rotten Tomatoes is the leading movie and TV review aggregation platform, providing
+  Tomatometer scores, Audience Scores, critic consensus summaries, and review snippets
+  for movies and television shows. The Rotten Tomatoes API enables approved partners to
+  access Tomatometer and Audience scores, critic and audience reviews, box office lists,
+  movie details, cast information, DVD release data, and search capabilities. API access
+  is managed through the Fandango Developer Network and requires an approved application
+  and a paid license agreement starting at $60,000 annually.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/rottentomatoes/refs/heads/main/apis.yml
+created: "2026-06-13"
+modified: "2026-06-13"
+specificationVersion: "0.19"
+tags:
+  - Movies
+  - Television
+  - Reviews
+  - Ratings
+  - Tomatometer
+  - Audience Score
+  - Entertainment
+  - Media
+apis:
+  - aid: rottentomatoes:rotten-tomatoes-api
+    name: Rotten Tomatoes API
+    description: >-
+      The Rotten Tomatoes API v1.0 provides access to movie and TV review aggregation
+      data including Tomatometer scores, Audience scores, critic consensus, critic reviews,
+      box office lists, in-theater listings, upcoming releases, DVD rental data, cast
+      information, and movie search. The API is available to approved partners via the
+      Fandango Developer Network and requires a paid license.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://developer.fandango.com/rotten_tomatoes
+    baseURL: http://api.rottentomatoes.com/api/public/v1.0
+    tags:
+      - Movies
+      - Television
+      - Tomatometer
+      - Reviews
+      - Ratings
+      - Box Office
+      - DVD
+      - Search
+    properties:
+      - type: Documentation
+        url: https://developer.fandango.com/rotten_tomatoes
+      - type: TermsOfService
+        url: https://developer.fandango.com/Fandango_Terms_of_Service
+      - type: TermsOfUse
+        url: https://www.rottentomatoes.com/policies/terms-of-use
+      - type: PrivacyPolicy
+        url: https://www.versantprivacy.com/privacy
+      - type: OpenAPI
+        url: https://raw.githubusercontent.com/api-evangelist/rotten-tomatoes/master/rotten-tomatoes-openapi.json
+      - type: PostmanWorkspace
+        url: https://www.postman.com/api-evangelist/rotten-tomatoes/overview
+      - type: BusinessProposalForm
+        url: https://fandango.az1.qualtrics.com/jfe/form/SV_0ieuKEYpn4S7nnM
+      - type: Plans
+        url: https://raw.githubusercontent.com/api-evangelist/rottentomatoes/refs/heads/main/plans/plans.yml
+      - type: RateLimits
+        url: https://raw.githubusercontent.com/api-evangelist/rottentomatoes/refs/heads/main/rate-limits/rate-limits.yml
+      - type: FinOps
+        url: https://raw.githubusercontent.com/api-evangelist/rottentomatoes/refs/heads/main/finops/finops.yml
+    contact:
+      - FN: Rotten Tomatoes Developer Support
+        url: https://developer.fandango.com/rotten_tomatoes
+        email: pr@fandango.com
+common:
+  - type: Documentation
+    url: https://developer.fandango.com/rotten_tomatoes
+  - type: TermsOfService
+    url: https://developer.fandango.com/Fandango_Terms_of_Service
+  - type: PrivacyPolicy
+    url: https://www.versantprivacy.com/privacy
+  - type: Licensing
+    url: https://www.rottentomatoes.com/help_desk/licensing
+  - type: Contact
+    url: https://support.fandango.com/en_us/contact/contact-us-fandango-rkksORSDO?from=RT
+  - type: PostmanWorkspace
+    url: https://www.postman.com/api-evangelist/rotten-tomatoes/overview
+  - type: GitHub
+    url: https://github.com/api-evangelist/rotten-tomatoes
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

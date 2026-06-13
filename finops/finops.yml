@@ -1,0 +1,32 @@
+finops:
+  description: >-
+    Rotten Tomatoes API pricing is based on an annual commercial license negotiated
+    with Fandango (the parent company of Rotten Tomatoes). The API is not available
+    on a self-serve or pay-as-you-go basis. All financial terms are determined
+    through the application and approval process.
+  pricingModel: Annual License Fee
+  selfServe: false
+  pricingPubliclyListed: false
+  knownStartingPrice:
+    amount: 60000
+    currency: USD
+    period: annual
+    source: >-
+      Publicly reported starting price for full access to Rotten Tomatoes Scores
+      and Reviews Snippets (up to 20 per title). Actual pricing may vary based on
+      usage volume, integration type, and commercial terms.
+  accessProcess:
+    - Submit business proposal form at https://fandango.az1.qualtrics.com/jfe/form/SV_0ieuKEYpn4S7nnM
+    - Rotten Tomatoes reviews application against brand guidelines and terms of service
+    - Approval or denial communicated (up to 60 days)
+    - License agreement negotiated and executed upon approval
+    - API keys provisioned after license agreement signed
+  billingContact:
+    url: https://developer.fandango.com/rotten_tomatoes
+    email: pr@fandango.com
+  termsOfService: https://developer.fandango.com/Fandango_Terms_of_Service
+  notes:
+    - Free tier is not available
+    - Trial access is not publicly advertised
+    - Pricing applies to commercial and enterprise partners only
+    - Fandango owns Rotten Tomatoes and administers all API licensing

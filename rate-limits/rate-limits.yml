@@ -1,0 +1,16 @@
+rateLimits:
+  description: >-
+    Rotten Tomatoes does not publicly document specific rate limit thresholds for
+    their API. Rate limits are defined in the license agreement negotiated with
+    Fandango upon application approval. Partners should contact Fandango through
+    the developer portal for specific rate limit details applicable to their use case.
+  source: https://developer.fandango.com/rotten_tomatoes
+  publiclyDocumented: false
+  notes:
+    - Rate limits are contractually defined per partner agreement
+    - Specific thresholds are disclosed upon application approval
+    - Contact Fandango Developer Network for rate limit details
+    - Historical public API (v1.0) had per-key request quotas but is no longer publicly available
+  contactForDetails:
+    url: https://fandango.az1.qualtrics.com/jfe/form/SV_0ieuKEYpn4S7nnM
+    description: Submit a business proposal form to inquire about rate limits and access tiers
