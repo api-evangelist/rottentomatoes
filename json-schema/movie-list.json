@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/rottentomatoes/main/json-schema/movie-list.json",
+  "title": "MovieList",
+  "description": "A paginated list of movies returned by the Rotten Tomatoes API (box office, in theaters, opening, upcoming, search results).",
+  "type": "object",
+  "properties": {
+    "total": {
+      "type": "integer",
+      "description": "Total number of movies matching the query."
+    },
+    "movies": {
+      "type": "array",
+      "description": "Array of movie objects in the current page.",
+      "items": {
+        "$ref": "movie.json"
+      }
+    },
+    "links": {
+      "type": "object",
+      "description": "Pagination navigation links.",
+      "properties": {
+        "self": {
+          "type": "string",
+          "format": "uri"
+        },
+        "next": {
+          "type": "string",
+          "format": "uri"
+        },
+        "prev": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "link_template": {
+      "type": "string",
+      "description": "URI template for navigating this list."
+    }
+  }
+}

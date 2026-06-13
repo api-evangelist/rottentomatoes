@@ -1,0 +1,177 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/rottentomatoes/main/json-schema/movie.json",
+  "title": "Movie",
+  "description": "A movie resource returned by the Rotten Tomatoes API, including Tomatometer and Audience Score data.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the movie in the Rotten Tomatoes system."
+    },
+    "title": {
+      "type": "string",
+      "description": "The title of the movie."
+    },
+    "year": {
+      "type": "integer",
+      "description": "The year the movie was released."
+    },
+    "mpaa_rating": {
+      "type": "string",
+      "description": "The MPAA rating of the movie (e.g., G, PG, PG-13, R, NC-17, NR)."
+    },
+    "runtime": {
+      "type": "string",
+      "description": "The runtime of the movie in minutes."
+    },
+    "critics_consensus": {
+      "type": "string",
+      "description": "A summary of critic reviews for the movie."
+    },
+    "release_dates": {
+      "type": "object",
+      "description": "Release date information for the movie.",
+      "properties": {
+        "theater": {
+          "type": "string",
+          "format": "date",
+          "description": "Theatrical release date (YYYY-MM-DD)."
+        },
+        "dvd": {
+          "type": "string",
+          "format": "date",
+          "description": "DVD release date (YYYY-MM-DD)."
+        }
+      }
+    },
+    "ratings": {
+      "type": "object",
+      "description": "Tomatometer and Audience Score ratings.",
+      "properties": {
+        "critics_rating": {
+          "type": "string",
+          "enum": ["Certified Fresh", "Fresh", "Rotten"],
+          "description": "The Tomatometer rating label."
+        },
+        "critics_score": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Tomatometer score as a percentage (0-100)."
+        },
+        "audience_rating": {
+          "type": "string",
+          "enum": ["Upright", "Spilled"],
+          "description": "The Audience Score rating label."
+        },
+        "audience_score": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Audience Score as a percentage (0-100)."
+        }
+      }
+    },
+    "synopsis": {
+      "type": "string",
+      "description": "A brief description of the movie's plot."
+    },
+    "posters": {
+      "type": "object",
+      "description": "Poster image URLs for the movie.",
+      "properties": {
+        "thumbnail": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL of the thumbnail poster image."
+        },
+        "profile": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL of the profile poster image."
+        },
+        "detailed": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL of the detailed poster image."
+        },
+        "original": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL of the original poster image."
+        }
+      }
+    },
+    "abridged_cast": {
+      "type": "array",
+      "description": "A brief list of cast members.",
+      "items": {
+        "$ref": "#/definitions/CastMember"
+      }
+    },
+    "alternate_ids": {
+      "type": "object",
+      "description": "Alternate IDs for the movie on other platforms.",
+      "properties": {
+        "imdb": {
+          "type": "string",
+          "description": "IMDb ID for the movie."
+        }
+      }
+    },
+    "links": {
+      "type": "object",
+      "description": "Links to related resources on Rotten Tomatoes.",
+      "properties": {
+        "self": {
+          "type": "string",
+          "format": "uri"
+        },
+        "alternate": {
+          "type": "string",
+          "format": "uri"
+        },
+        "cast": {
+          "type": "string",
+          "format": "uri"
+        },
+        "clips": {
+          "type": "string",
+          "format": "uri"
+        },
+        "reviews": {
+          "type": "string",
+          "format": "uri"
+        },
+        "similar": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    }
+  },
+  "definitions": {
+    "CastMember": {
+      "type": "object",
+      "description": "A cast member in a movie.",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Full name of the cast member."
+        },
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the cast member."
+        },
+        "characters": {
+          "type": "array",
+          "description": "List of character names played by this cast member.",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

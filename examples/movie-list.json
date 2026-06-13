@@ -1,0 +1,56 @@
+{
+  "total": 16,
+  "movies": [
+    {
+      "id": "771355287",
+      "title": "The Avengers",
+      "year": 2012,
+      "mpaa_rating": "PG-13",
+      "runtime": "143",
+      "critics_consensus": "Thanks to a script that never forgets to have fun with its superhero premise, and Joss Whedon's assured direction, Marvel's The Avengers is an ambitious comic book action blockbuster.",
+      "release_dates": {
+        "theater": "2012-05-04"
+      },
+      "ratings": {
+        "critics_rating": "Certified Fresh",
+        "critics_score": 92,
+        "audience_rating": "Upright",
+        "audience_score": 91
+      },
+      "synopsis": "When Thor's evil brother, Loki, gains access to the unlimited power of the energy cube called the Tesseract, Nick Fury, director of S.H.I.E.L.D., initiates a superhero recruitment effort to defeat the unprecedented threat to Earth.",
+      "posters": {
+        "thumbnail": "http://content9.flixster.com/movie/11/17/33/11173306_mob.jpg",
+        "profile": "http://content9.flixster.com/movie/11/17/33/11173306_pro.jpg",
+        "detailed": "http://content9.flixster.com/movie/11/17/33/11173306_det.jpg",
+        "original": "http://content9.flixster.com/movie/11/17/33/11173306_ori.jpg"
+      },
+      "abridged_cast": [
+        {
+          "name": "Robert Downey Jr.",
+          "id": "162660021",
+          "characters": ["Tony Stark / Iron Man"]
+        },
+        {
+          "name": "Chris Evans",
+          "id": "355413377",
+          "characters": ["Steve Rogers / Captain America"]
+        }
+      ],
+      "alternate_ids": {
+        "imdb": "0848228"
+      },
+      "links": {
+        "self": "http://api.rottentomatoes.com/api/public/v1.0/movies/771355287.json",
+        "alternate": "http://www.rottentomatoes.com/m/avengers_2012/",
+        "cast": "http://api.rottentomatoes.com/api/public/v1.0/movies/771355287/cast.json",
+        "reviews": "http://api.rottentomatoes.com/api/public/v1.0/movies/771355287/reviews.json",
+        "similar": "http://api.rottentomatoes.com/api/public/v1.0/movies/771355287/similar.json"
+      }
+    }
+  ],
+  "links": {
+    "self": "http://api.rottentomatoes.com/api/public/v1.0/lists/movies/box_office.json?limit=16&country=us",
+    "next": "http://api.rottentomatoes.com/api/public/v1.0/lists/movies/box_office.json?limit=16&country=us&page=2"
+  },
+  "link_template": "http://api.rottentomatoes.com/api/public/v1.0/lists/movies/box_office.json?limit={limit}&country={country}&page={page}"
+}

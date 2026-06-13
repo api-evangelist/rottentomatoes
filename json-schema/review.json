@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/rottentomatoes/main/json-schema/review.json",
+  "title": "Review",
+  "description": "A critic or audience review returned by the Rotten Tomatoes API.",
+  "type": "object",
+  "properties": {
+    "critic": {
+      "type": "string",
+      "description": "The name of the critic who wrote the review."
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "The date the review was published (YYYY-MM-DD)."
+    },
+    "freshness": {
+      "type": "string",
+      "enum": ["fresh", "rotten"],
+      "description": "Whether the review is fresh (positive) or rotten (negative)."
+    },
+    "publication": {
+      "type": "string",
+      "description": "The name of the publication where the review appeared."
+    },
+    "quote": {
+      "type": "string",
+      "description": "A brief excerpt or quote from the review."
+    },
+    "links": {
+      "type": "object",
+      "description": "Links related to the review.",
+      "properties": {
+        "review": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL of the full review."
+        }
+      }
+    }
+  }
+}

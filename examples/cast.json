@@ -1,0 +1,33 @@
+{
+  "cast": [
+    {
+      "name": "Tom Hanks",
+      "id": "162654148",
+      "characters": ["Woody"]
+    },
+    {
+      "name": "Tim Allen",
+      "id": "306092258",
+      "characters": ["Buzz Lightyear"]
+    },
+    {
+      "name": "Joan Cusack",
+      "id": "594123926",
+      "characters": ["Jessie the Cowgirl"]
+    },
+    {
+      "name": "Ned Beatty",
+      "id": "162651896",
+      "characters": ["Lots-o'-Huggin' Bear"]
+    },
+    {
+      "name": "Don Rickles",
+      "id": "162665974",
+      "characters": ["Mr. Potato Head"]
+    }
+  ],
+  "links": {
+    "self": "http://api.rottentomatoes.com/api/public/v1.0/movies/770672122/cast.json",
+    "movie": "http://api.rottentomatoes.com/api/public/v1.0/movies/770672122.json"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "@context": "https://raw.githubusercontent.com/api-evangelist/rottentomatoes/main/json-ld/context.json",
+  "@type": "Movie",
+  "@id": "http://api.rottentomatoes.com/api/public/v1.0/movies/770672122.json",
+  "title": "Toy Story 3",
+  "year": 2010,
+  "mpaa_rating": "G",
+  "runtime": "PT103M",
+  "critics_consensus": "Toy Story 3 is a funny, poignant adventure that perfectly balances the franchise's signature humor with an emotional narrative that will resonate with fans young and old.",
+  "release_dates": {
+    "theater": "2010-06-18",
+    "dvd": "2010-11-02"
+  },
+  "ratings": {
+    "critics_rating": "Certified Fresh",
+    "critics_score": 98,
+    "audience_rating": "Upright",
+    "audience_score": 89
+  },
+  "synopsis": "Woody, Buzz, and the whole gang are back. As their owner Andy prepares to depart for college, his loyal toys find themselves in daycare.",
+  "abridged_cast": [
+    {
+      "@type": "CastMember",
+      "name": "Tom Hanks",
+      "characters": ["Woody"]
+    },
+    {
+      "@type": "CastMember",
+      "name": "Tim Allen",
+      "characters": ["Buzz Lightyear"]
+    }
+  ],
+  "alternate_ids": {
+    "imdb": "https://www.imdb.com/title/tt0435761/"
+  },
+  "links": {
+    "self": "http://api.rottentomatoes.com/api/public/v1.0/movies/770672122.json",
+    "alternate": "http://www.rottentomatoes.com/m/toy_story_3/"
+  }
+}

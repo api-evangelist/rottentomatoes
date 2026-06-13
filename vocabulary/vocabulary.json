@@ -1,0 +1,129 @@
+{
+  "vocabulary": {
+    "name": "Rotten Tomatoes API Vocabulary",
+    "description": "Domain terms and concepts used in the Rotten Tomatoes API.",
+    "url": "https://developer.fandango.com/rotten_tomatoes",
+    "terms": [
+      {
+        "term": "Tomatometer",
+        "definition": "The percentage of approved critics' reviews that are positive for a given film or TV show. A score of 60% or higher is considered Fresh.",
+        "type": "rating"
+      },
+      {
+        "term": "Certified Fresh",
+        "definition": "A special distinction awarded to movies and TV shows with a consistent Tomatometer score of at least 75% with a minimum number of reviews. Eligible for theatrical release films must have at least 80 reviews.",
+        "type": "rating-label"
+      },
+      {
+        "term": "Fresh",
+        "definition": "A film or TV show with a Tomatometer score of 60% or higher is considered Fresh.",
+        "type": "rating-label"
+      },
+      {
+        "term": "Rotten",
+        "definition": "A film or TV show with a Tomatometer score below 60% is considered Rotten.",
+        "type": "rating-label"
+      },
+      {
+        "term": "Audience Score",
+        "definition": "The percentage of users who have rated the film or TV show positively. Calculated from verified audience ratings.",
+        "type": "rating"
+      },
+      {
+        "term": "Upright",
+        "definition": "An Audience Score label indicating that 60% or more of users gave a positive rating (3.5 stars or higher out of 5).",
+        "type": "rating-label"
+      },
+      {
+        "term": "Spilled",
+        "definition": "An Audience Score label indicating that fewer than 60% of users gave a positive rating.",
+        "type": "rating-label"
+      },
+      {
+        "term": "Critics Consensus",
+        "definition": "A brief editorial summary of what critics think of a movie or TV show, synthesized from all published critical reviews.",
+        "type": "content"
+      },
+      {
+        "term": "Top Critic",
+        "definition": "A critic designated by Rotten Tomatoes as a major critic, typically from major publications and outlets. Their reviews are highlighted and tracked separately.",
+        "type": "role"
+      },
+      {
+        "term": "Box Office",
+        "definition": "A list of movies currently performing at the top of the domestic box office based on ticket sales.",
+        "type": "list-type"
+      },
+      {
+        "term": "In Theaters",
+        "definition": "A list of movies currently playing in movie theaters.",
+        "type": "list-type"
+      },
+      {
+        "term": "Opening",
+        "definition": "A list of movies opening in theaters this week.",
+        "type": "list-type"
+      },
+      {
+        "term": "Upcoming",
+        "definition": "A list of movies scheduled to be released in theaters in the near future.",
+        "type": "list-type"
+      },
+      {
+        "term": "Top Rentals",
+        "definition": "A list of the most rented DVD titles in the current period.",
+        "type": "list-type"
+      },
+      {
+        "term": "Current Releases (DVD)",
+        "definition": "A list of movies that have recently been released on DVD.",
+        "type": "list-type"
+      },
+      {
+        "term": "New Releases (DVD)",
+        "definition": "A list of newly available DVD titles.",
+        "type": "list-type"
+      },
+      {
+        "term": "Upcoming (DVD)",
+        "definition": "A list of movies scheduled for DVD release in the near future.",
+        "type": "list-type"
+      },
+      {
+        "term": "MPAA Rating",
+        "definition": "The Motion Picture Association of America content rating indicating appropriate audience age: G (General Audiences), PG (Parental Guidance Suggested), PG-13, R (Restricted), NC-17, NR (Not Rated).",
+        "type": "classification"
+      },
+      {
+        "term": "apikey",
+        "definition": "The API key required to authenticate requests to the Rotten Tomatoes API, passed as a query parameter.",
+        "type": "authentication"
+      },
+      {
+        "term": "page_limit",
+        "definition": "A query parameter that controls the maximum number of results returned per page in paginated API responses.",
+        "type": "pagination"
+      },
+      {
+        "term": "page",
+        "definition": "A query parameter that selects which page of paginated results to return.",
+        "type": "pagination"
+      },
+      {
+        "term": "country",
+        "definition": "An ISO 3166-1 alpha-2 country code query parameter that returns localized data when available. Defaults to 'us'.",
+        "type": "localization"
+      },
+      {
+        "term": "review_type",
+        "definition": "A query parameter for filtering movie reviews. Values: 'all' (all reviews), 'top_critic' (Rotten Tomatoes designated top critics), 'dvd' (reviews from DVD releases).",
+        "type": "filter"
+      },
+      {
+        "term": "Fandango Developer Network",
+        "definition": "The developer program through which access to the Rotten Tomatoes API is managed. Requires an approved application and a paid license agreement.",
+        "type": "program"
+      }
+    ]
+  }
+}

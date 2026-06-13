@@ -1,0 +1,92 @@
+{
+  "@context": {
+    "@vocab": "http://schema.org/",
+    "rt": "https://developer.fandango.com/rotten_tomatoes#",
+    "Movie": "schema:Movie",
+    "id": "@id",
+    "title": "schema:name",
+    "year": "schema:dateCreated",
+    "runtime": "schema:duration",
+    "synopsis": "schema:description",
+    "mpaa_rating": "schema:contentRating",
+    "critics_consensus": "rt:criticsConsensus",
+    "release_dates": {
+      "@id": "rt:releaseDates",
+      "@type": "@id"
+    },
+    "theater": {
+      "@id": "schema:datePublished",
+      "@type": "schema:Date"
+    },
+    "dvd": {
+      "@id": "rt:dvdReleaseDate",
+      "@type": "schema:Date"
+    },
+    "ratings": {
+      "@id": "rt:ratings",
+      "@type": "@id"
+    },
+    "critics_rating": "rt:tomatoMeter",
+    "critics_score": {
+      "@id": "rt:tomatoMeterScore",
+      "@type": "schema:Number"
+    },
+    "audience_rating": "rt:audienceRating",
+    "audience_score": {
+      "@id": "rt:audienceScore",
+      "@type": "schema:Number"
+    },
+    "posters": {
+      "@id": "schema:image",
+      "@type": "@id"
+    },
+    "thumbnail": {
+      "@id": "schema:thumbnailUrl",
+      "@type": "@id"
+    },
+    "original": {
+      "@id": "schema:url",
+      "@type": "@id"
+    },
+    "abridged_cast": {
+      "@id": "schema:actor",
+      "@type": "schema:Person"
+    },
+    "name": "schema:name",
+    "characters": "rt:character",
+    "alternate_ids": {
+      "@id": "rt:alternateIds",
+      "@type": "@id"
+    },
+    "imdb": {
+      "@id": "schema:sameAs",
+      "@type": "@id"
+    },
+    "links": {
+      "@id": "rt:links",
+      "@type": "@id"
+    },
+    "self": {
+      "@id": "schema:url",
+      "@type": "@id"
+    },
+    "alternate": {
+      "@id": "schema:sameAs",
+      "@type": "@id"
+    },
+    "Review": "schema:Review",
+    "critic": "schema:author",
+    "date": "schema:datePublished",
+    "freshness": "rt:freshness",
+    "publication": "schema:publisher",
+    "quote": "schema:reviewBody",
+    "review": {
+      "@id": "schema:url",
+      "@type": "@id"
+    },
+    "CastMember": "schema:Person",
+    "MovieList": "schema:ItemList",
+    "movies": "schema:itemListElement",
+    "total": "schema:numberOfItems"
+  }
+}
