@@ -9,7 +9,7 @@ description: >-
   is managed through the Fandango Developer Network and requires an approved application
   and a paid license agreement starting at $60,000 annually.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/rottentomatoes/refs/heads/main/apis.yml
 created: "2026-06-13"
 modified: "2026-06-13"
@@ -32,7 +32,7 @@ apis:
       box office lists, in-theater listings, upcoming releases, DVD rental data, cast
       information, and movie search. The API is available to approved partners via the
       Fandango Developer Network and requires a paid license.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://developer.fandango.com/rotten_tomatoes
     baseURL: http://api.rottentomatoes.com/api/public/v1.0
     tags:
