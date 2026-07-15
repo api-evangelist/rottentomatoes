@@ -70,6 +70,8 @@ apis:
         url: https://developer.fandango.com/rotten_tomatoes
         email: pr@fandango.com
 common:
+  - type: AgenticAccess
+    url: agentic-access/rottentomatoes-agentic-access.yml
   - type: DomainSecurity
     url: security/rottentomatoes-domain-security.yml
   - type: Authentication
