@@ -1,0 +1,156 @@
+openapi: 3.0.0
+info:
+  contact:
+    email: mike.ralphson@gmail.com
+    name: Mike Ralphson
+    url: https://github.com/mermade/mashery2openapi
+  description: Test our API services using I/O Docs.
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
+  title: Rotten Tomatoes Detailed Info Movie Lists API
+  version: '1.0'
+  x-mashery-id: '1217'
+  x-jentic-source-url: https://raw.githubusercontent.com/Mermade/openapi_specifications/master/mashery/api.rottentomatoes.com/Rotten-Tomatoes/1.0/swagger.json
+servers:
+- url: http://api.rottentomatoes.com/api/public/v1.0
+security:
+- key: []
+tags:
+- name: Movie Lists
+paths:
+  /lists/movies/box_office.json:
+    get:
+      parameters:
+      - description: Limits the number of movies returned
+        in: query
+        name: limit
+        required: false
+        schema:
+          default: '16'
+          type: string
+      - description: Provides localized data for the selected country (ISO 3166-1 alpha-2) if available. Otherwise, returns US data.
+        in: query
+        name: country
+        required: false
+        schema:
+          default: us
+          type: string
+      responses:
+        '200':
+          description: Success
+        '400':
+          description: Bad Request
+        '403':
+          description: Forbidden
+      tags:
+      - Movie Lists
+      operationId: BoxOfficeMovieLists
+      summary: ''
+  /lists/movies/in_theaters.json:
+    get:
+      parameters:
+      - description: The amount of movies in theaters to show per page
+        in: query
+        name: page_limit
+        required: false
+        schema:
+          default: '16'
+          type: string
+      - description: The selected page of in theaters movies
+        in: query
+        name: page
+        required: false
+        schema:
+          default: '1'
+          type: string
+      - description: Provides localized data for the selected country (ISO 3166-1 alpha-2) if available. Otherwise, returns US data.
+        in: query
+        name: country
+        required: false
+        schema:
+          default: us
+          type: string
+      responses:
+        '200':
+          description: Success
+        '400':
+          description: Bad Request
+        '403':
+          description: Forbidden
+      tags:
+      - Movie Lists
+      operationId: InTheatersMovieLists
+      summary: ''
+  /lists/movies/opening.json:
+    get:
+      parameters:
+      - description: Limits the number of opening movies returned
+        in: query
+        name: limit
+        required: false
+        schema:
+          default: '16'
+          type: string
+      - description: Provides localized data for the selected country (ISO 3166-1 alpha-2) if available. Otherwise, returns US data.
+        in: query
+        name: country
+        required: false
+        schema:
+          default: us
+          type: string
+      responses:
+        '200':
+          description: Success
+        '400':
+          description: Bad Request
+        '403':
+          description: Forbidden
+      tags:
+      - Movie Lists
+      operationId: OpeningMoviesMovieLists
+      summary: ''
+  /lists/movies/upcoming.json:
+    get:
+      parameters:
+      - description: The amount of upcoming movies to show per page
+        in: query
+        name: page_limit
+        required: false
+        schema:
+          default: '16'
+          type: string
+      - description: The selected page of upcoming movies
+        in: query
+        name: page
+        required: false
+        schema:
+          default: '1'
+          type: string
+      - description: Provides localized data for the selected country (ISO 3166-1 alpha-2) if available. Otherwise, returns US data.
+        in: query
+        name: country
+        required: false
+        schema:
+          default: us
+          type: string
+      responses:
+        '200':
+          description: Success
+        '400':
+          description: Bad Request
+        '403':
+          description: Forbidden
+      tags:
+      - Movie Lists
+      operationId: UpcomingMoviesMovieLists
+      summary: ''
+components:
+  securitySchemes:
+    key:
+      in: query
+      name: apikey
+      type: apiKey
+externalDocs:
+  description: You can also view our written documentation.
+  url: http://developer.rottentomatoes.com/io-docs/docs

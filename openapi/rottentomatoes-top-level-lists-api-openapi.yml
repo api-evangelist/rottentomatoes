@@ -1,0 +1,69 @@
+openapi: 3.0.0
+info:
+  contact:
+    email: mike.ralphson@gmail.com
+    name: Mike Ralphson
+    url: https://github.com/mermade/mashery2openapi
+  description: Test our API services using I/O Docs.
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
+  title: Rotten Tomatoes Detailed Info Top Level Lists API
+  version: '1.0'
+  x-mashery-id: '1217'
+  x-jentic-source-url: https://raw.githubusercontent.com/Mermade/openapi_specifications/master/mashery/api.rottentomatoes.com/Rotten-Tomatoes/1.0/swagger.json
+servers:
+- url: http://api.rottentomatoes.com/api/public/v1.0
+security:
+- key: []
+tags:
+- name: Top Level Lists
+paths:
+  /lists.json:
+    get:
+      responses:
+        '200':
+          description: Success
+        '400':
+          description: Bad Request
+        '403':
+          description: Forbidden
+      tags:
+      - Top Level Lists
+      operationId: ListsDirectoryTopLevelLists
+      summary: ''
+  /lists/dvds.json:
+    get:
+      responses:
+        '200':
+          description: Success
+        '400':
+          description: Bad Request
+        '403':
+          description: Forbidden
+      tags:
+      - Top Level Lists
+      operationId: DVDListsDirectoryTopLevelLists
+      summary: ''
+  /lists/movies.json:
+    get:
+      responses:
+        '200':
+          description: Success
+        '400':
+          description: Bad Request
+        '403':
+          description: Forbidden
+      tags:
+      - Top Level Lists
+      operationId: MovieListsDirectoryTopLevelLists
+      summary: ''
+components:
+  securitySchemes:
+    key:
+      in: query
+      name: apikey
+      type: apiKey
+externalDocs:
+  description: You can also view our written documentation.
+  url: http://developer.rottentomatoes.com/io-docs/docs
