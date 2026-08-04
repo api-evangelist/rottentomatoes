@@ -1,0 +1,22 @@
+{
+  "provider": "rottentomatoes",
+  "sources": [
+    "rottentomatoes-detailed-info-api-openapi.yml",
+    "rottentomatoes-dvd-lists-api-openapi.yml",
+    "rottentomatoes-movie-lists-api-openapi.yml",
+    "rottentomatoes-search-api-openapi.yml",
+    "rottentomatoes-top-level-lists-api-openapi.yml"
+  ],
+  "outputs": [
+    "rottentomatoes-detailed-info-api-openapi.yml",
+    "rottentomatoes-dvd-lists-api-openapi.yml",
+    "rottentomatoes-movie-lists-api-openapi.yml",
+    "rottentomatoes-search-api-openapi.yml",
+    "rottentomatoes-top-level-lists-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
