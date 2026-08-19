@@ -1,0 +1,140 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Rotten Tomatoes Detailed Info DVD Lists API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "apikey",
+      "value": "{{apikey}}",
+      "placement": "query"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "DVD Lists",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "CurrentReleaseDVDsDVDLists",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://api.rottentomatoes.com/api/public/v1.0/lists/dvds/current_releases.json",
+            "params": [
+              {
+                "name": "page_limit",
+                "value": "",
+                "type": "query",
+                "description": "The amount of new release dvds to show per page"
+              },
+              {
+                "name": "page",
+                "value": "",
+                "type": "query",
+                "description": "The selected page of current DVD releases"
+              },
+              {
+                "name": "country",
+                "value": "",
+                "type": "query",
+                "description": "Provides localized data for the selected country (ISO 3166-1 alpha-2) if available. Otherwise, returns US data."
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "NewReleaseDVDsDVDLists",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://api.rottentomatoes.com/api/public/v1.0/lists/dvds/new_releases.json",
+            "params": [
+              {
+                "name": "page_limit",
+                "value": "",
+                "type": "query",
+                "description": "The amount of new release dvds to show per page"
+              },
+              {
+                "name": "page",
+                "value": "",
+                "type": "query",
+                "description": "The selected page of new release DVDs"
+              },
+              {
+                "name": "country",
+                "value": "",
+                "type": "query",
+                "description": "Provides localized data for the selected country (ISO 3166-1 alpha-2) if available. Otherwise, returns US data."
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "TopRentalsDVDLists",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://api.rottentomatoes.com/api/public/v1.0/lists/dvds/top_rentals.json",
+            "params": [
+              {
+                "name": "limit",
+                "value": "",
+                "type": "query",
+                "description": "Limits the number of top rentals returned"
+              },
+              {
+                "name": "country",
+                "value": "",
+                "type": "query",
+                "description": "Provides localized data for the selected country (ISO 3166-1 alpha-2) if available. Otherwise, returns US data."
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "UpcomingDVDsDVDLists",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://api.rottentomatoes.com/api/public/v1.0/lists/dvds/upcoming.json",
+            "params": [
+              {
+                "name": "page_limit",
+                "value": "",
+                "type": "query",
+                "description": "The amount of upcoming dvds to show per page"
+              },
+              {
+                "name": "page",
+                "value": "",
+                "type": "query",
+                "description": "The selected page of upcoming DVDs"
+              },
+              {
+                "name": "country",
+                "value": "",
+                "type": "query",
+                "description": "Provides localized data for the selected country (ISO 3166-1 alpha-2) if available. Otherwise, returns US data."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

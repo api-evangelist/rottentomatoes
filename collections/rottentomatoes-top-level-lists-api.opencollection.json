@@ -1,0 +1,56 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Rotten Tomatoes Detailed Info Top Level Lists API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "apikey",
+      "value": "{{apikey}}",
+      "placement": "query"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Top Level Lists",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "ListsDirectoryTopLevelLists",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://api.rottentomatoes.com/api/public/v1.0/lists.json"
+          }
+        },
+        {
+          "info": {
+            "name": "DVDListsDirectoryTopLevelLists",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://api.rottentomatoes.com/api/public/v1.0/lists/dvds.json"
+          }
+        },
+        {
+          "info": {
+            "name": "MovieListsDirectoryTopLevelLists",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://api.rottentomatoes.com/api/public/v1.0/lists/movies.json"
+          }
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

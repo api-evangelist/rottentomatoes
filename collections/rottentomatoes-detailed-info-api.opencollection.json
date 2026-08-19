@@ -1,0 +1,170 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Rotten Tomatoes Detailed Info API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "apikey",
+      "value": "{{apikey}}",
+      "placement": "query"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Detailed Info",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "MoviesAliasDetailedInfo",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://api.rottentomatoes.com/api/public/v1.0/movie_alias.json",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "query",
+                "description": "Movie ID. You can use the movies search endpoint or peruse the lists of movies/dvds to get the Movie ID"
+              },
+              {
+                "name": "type",
+                "value": "",
+                "type": "query",
+                "description": "Only supports imdb lookup at this time"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "MoviesInfoDetailedInfo",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://api.rottentomatoes.com/api/public/v1.0/movies/:id.json",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path",
+                "description": "Movie ID. You can use the movies search endpoint or peruse the lists of movies/dvds to get the Movie ID"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "CastInfoDetailedInfo",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://api.rottentomatoes.com/api/public/v1.0/movies/:id/cast.json",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path",
+                "description": "Movie ID. You can use the movies search endpoint or peruse the lists of movies/dvds to get the Movie ID"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "MovieClipsDetailedInfo",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://api.rottentomatoes.com/api/public/v1.0/movies/:id/clips.json",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path",
+                "description": "Movie ID. You can use the movies search endpoint or peruse the lists of movies/dvds to get the Movie ID"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "MoviesReviewsDetailedInfo",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://api.rottentomatoes.com/api/public/v1.0/movies/:id/reviews.json",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path",
+                "description": "Movie ID. You can use the movies search endpoint or peruse the lists of movies/dvds to get the Movie ID"
+              },
+              {
+                "name": "review_type",
+                "value": "",
+                "type": "query",
+                "description": "3 different review types are possible: 'all', 'top_critic' and 'dvd'. 'top_critic' shows all the Rotten Tomatoes designated top critics. 'dvd' pulls the reviews given on the DVD of the movie. 'all' as the name implies retrieves all reviews."
+              },
+              {
+                "name": "page_limit",
+                "value": "",
+                "type": "query",
+                "description": "The number of reviews to show per page"
+              },
+              {
+                "name": "page",
+                "value": "",
+                "type": "query",
+                "description": "The selected page of reviews"
+              },
+              {
+                "name": "country",
+                "value": "",
+                "type": "query",
+                "description": "Provides localized data for the selected country (ISO 3166-1 alpha-2) if available. Otherwise, returns US data."
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "MoviesSimilarDetailedInfo",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://api.rottentomatoes.com/api/public/v1.0/movies/:id/similar.json",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path",
+                "description": "Movie ID. You can use the movies search endpoint or peruse the lists of movies/dvds to get the Movie ID"
+              },
+              {
+                "name": "limit",
+                "value": "",
+                "type": "query",
+                "description": "Limit the number of similar movies to show"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

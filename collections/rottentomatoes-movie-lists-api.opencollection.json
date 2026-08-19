@@ -1,0 +1,134 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Rotten Tomatoes Detailed Info Movie Lists API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "apikey",
+      "value": "{{apikey}}",
+      "placement": "query"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Movie Lists",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "BoxOfficeMovieLists",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://api.rottentomatoes.com/api/public/v1.0/lists/movies/box_office.json",
+            "params": [
+              {
+                "name": "limit",
+                "value": "",
+                "type": "query",
+                "description": "Limits the number of movies returned"
+              },
+              {
+                "name": "country",
+                "value": "",
+                "type": "query",
+                "description": "Provides localized data for the selected country (ISO 3166-1 alpha-2) if available. Otherwise, returns US data."
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "InTheatersMovieLists",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://api.rottentomatoes.com/api/public/v1.0/lists/movies/in_theaters.json",
+            "params": [
+              {
+                "name": "page_limit",
+                "value": "",
+                "type": "query",
+                "description": "The amount of movies in theaters to show per page"
+              },
+              {
+                "name": "page",
+                "value": "",
+                "type": "query",
+                "description": "The selected page of in theaters movies"
+              },
+              {
+                "name": "country",
+                "value": "",
+                "type": "query",
+                "description": "Provides localized data for the selected country (ISO 3166-1 alpha-2) if available. Otherwise, returns US data."
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "OpeningMoviesMovieLists",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://api.rottentomatoes.com/api/public/v1.0/lists/movies/opening.json",
+            "params": [
+              {
+                "name": "limit",
+                "value": "",
+                "type": "query",
+                "description": "Limits the number of opening movies returned"
+              },
+              {
+                "name": "country",
+                "value": "",
+                "type": "query",
+                "description": "Provides localized data for the selected country (ISO 3166-1 alpha-2) if available. Otherwise, returns US data."
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "UpcomingMoviesMovieLists",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://api.rottentomatoes.com/api/public/v1.0/lists/movies/upcoming.json",
+            "params": [
+              {
+                "name": "page_limit",
+                "value": "",
+                "type": "query",
+                "description": "The amount of upcoming movies to show per page"
+              },
+              {
+                "name": "page",
+                "value": "",
+                "type": "query",
+                "description": "The selected page of upcoming movies"
+              },
+              {
+                "name": "country",
+                "value": "",
+                "type": "query",
+                "description": "Provides localized data for the selected country (ISO 3166-1 alpha-2) if available. Otherwise, returns US data."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
