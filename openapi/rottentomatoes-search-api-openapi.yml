@@ -1,4 +1,4 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
   contact:
     email: mike.ralphson@gmail.com
@@ -8,7 +8,7 @@ info:
   license:
     name: MIT
     url: https://opensource.org/licenses/MIT
-  title: Rotten Tomatoes Detailed Info Search API
+  title: Rotten Tomatoes Search API
   version: '1.0'
   x-mashery-id: '1217'
   x-jentic-source-url: https://raw.githubusercontent.com/Mermade/openapi_specifications/master/mashery/api.rottentomatoes.com/Rotten-Tomatoes/1.0/swagger.json
@@ -52,7 +52,8 @@ paths:
       tags:
       - Search
       operationId: MoviesSearchSearch
-      summary: ''
+      summary: Movies search search
+      x-summary-source: derived
 components:
   securitySchemes:
     key:

@@ -1,4 +1,4 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
   contact:
     email: mike.ralphson@gmail.com
@@ -8,7 +8,7 @@ info:
   license:
     name: MIT
     url: https://opensource.org/licenses/MIT
-  title: Rotten Tomatoes Detailed Info Top Level Lists API
+  title: Rotten Tomatoes Top Level Lists API
   version: '1.0'
   x-mashery-id: '1217'
   x-jentic-source-url: https://raw.githubusercontent.com/Mermade/openapi_specifications/master/mashery/api.rottentomatoes.com/Rotten-Tomatoes/1.0/swagger.json
@@ -31,7 +31,8 @@ paths:
       tags:
       - Top Level Lists
       operationId: ListsDirectoryTopLevelLists
-      summary: ''
+      summary: Lists directory top level lists
+      x-summary-source: derived
   /lists/dvds.json:
     get:
       responses:
@@ -44,7 +45,8 @@ paths:
       tags:
       - Top Level Lists
       operationId: DVDListsDirectoryTopLevelLists
-      summary: ''
+      summary: DVD lists directory top level lists
+      x-summary-source: derived
   /lists/movies.json:
     get:
       responses:
@@ -57,7 +59,8 @@ paths:
       tags:
       - Top Level Lists
       operationId: MovieListsDirectoryTopLevelLists
-      summary: ''
+      summary: Movie lists directory top level lists
+      x-summary-source: derived
 components:
   securitySchemes:
     key:

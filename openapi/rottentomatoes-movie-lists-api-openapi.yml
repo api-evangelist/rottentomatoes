@@ -1,4 +1,4 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
   contact:
     email: mike.ralphson@gmail.com
@@ -8,7 +8,7 @@ info:
   license:
     name: MIT
     url: https://opensource.org/licenses/MIT
-  title: Rotten Tomatoes Detailed Info Movie Lists API
+  title: Rotten Tomatoes Movie Lists API
   version: '1.0'
   x-mashery-id: '1217'
   x-jentic-source-url: https://raw.githubusercontent.com/Mermade/openapi_specifications/master/mashery/api.rottentomatoes.com/Rotten-Tomatoes/1.0/swagger.json
@@ -46,7 +46,8 @@ paths:
       tags:
       - Movie Lists
       operationId: BoxOfficeMovieLists
-      summary: ''
+      summary: Box office movie lists
+      x-summary-source: derived
   /lists/movies/in_theaters.json:
     get:
       parameters:
@@ -81,7 +82,8 @@ paths:
       tags:
       - Movie Lists
       operationId: InTheatersMovieLists
-      summary: ''
+      summary: In theaters movie lists
+      x-summary-source: derived
   /lists/movies/opening.json:
     get:
       parameters:
@@ -109,7 +111,8 @@ paths:
       tags:
       - Movie Lists
       operationId: OpeningMoviesMovieLists
-      summary: ''
+      summary: Opening movies movie lists
+      x-summary-source: derived
   /lists/movies/upcoming.json:
     get:
       parameters:
@@ -144,7 +147,8 @@ paths:
       tags:
       - Movie Lists
       operationId: UpcomingMoviesMovieLists
-      summary: ''
+      summary: Upcoming movies movie lists
+      x-summary-source: derived
 components:
   securitySchemes:
     key:

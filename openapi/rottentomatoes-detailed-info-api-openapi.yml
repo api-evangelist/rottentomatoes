@@ -1,4 +1,4 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
   contact:
     email: mike.ralphson@gmail.com
@@ -46,7 +46,8 @@ paths:
       tags:
       - Detailed Info
       operationId: MoviesAliasDetailedInfo
-      summary: ''
+      summary: Movies alias detailed info
+      x-summary-source: derived
   /movies/{id}.json:
     get:
       parameters:
@@ -67,7 +68,8 @@ paths:
       tags:
       - Detailed Info
       operationId: MoviesInfoDetailedInfo
-      summary: ''
+      summary: Movies info detailed info
+      x-summary-source: derived
   /movies/{id}/cast.json:
     get:
       parameters:
@@ -88,7 +90,8 @@ paths:
       tags:
       - Detailed Info
       operationId: CastInfoDetailedInfo
-      summary: ''
+      summary: Cast info detailed info
+      x-summary-source: derived
   /movies/{id}/clips.json:
     get:
       parameters:
@@ -109,7 +112,8 @@ paths:
       tags:
       - Detailed Info
       operationId: MovieClipsDetailedInfo
-      summary: ''
+      summary: Movie clips detailed info
+      x-summary-source: derived
   /movies/{id}/reviews.json:
     get:
       parameters:
@@ -158,7 +162,8 @@ paths:
       tags:
       - Detailed Info
       operationId: MoviesReviewsDetailedInfo
-      summary: ''
+      summary: Movies reviews detailed info
+      x-summary-source: derived
   /movies/{id}/similar.json:
     get:
       parameters:
@@ -186,7 +191,8 @@ paths:
       tags:
       - Detailed Info
       operationId: MoviesSimilarDetailedInfo
-      summary: ''
+      summary: Movies similar detailed info
+      x-summary-source: derived
 components:
   securitySchemes:
     key:
