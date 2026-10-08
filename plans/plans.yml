@@ -34,3 +34,16 @@ plans:
       - Upcoming releases and new releases
     brandGuidelines: https://www.rottentomatoes.com/help_desk/licensing
     termsOfService: https://developer.fandango.com/Fandango_Terms_of_Service
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - negotiated
+  units: []
+  plans:
+  - name: Licensed Partner Plan
+    access: other
+    model: negotiated
+    model_how: derived
+    units: []
+    periods: []
